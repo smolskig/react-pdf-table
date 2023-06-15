@@ -1,4 +1,3 @@
-import {PdfTable} from './PdfTable'
-
+import { PdfTable } from './PdfTable/Table'
 
 export default PdfTable

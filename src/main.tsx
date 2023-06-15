@@ -7,7 +7,7 @@ import {
     Page,
     StyleSheet,
 } from '@react-pdf/renderer'
-import { PdfTable } from './components/PdfTable.tsx'
+import PdfTable from './components'
 
 const App = () => {
     Font.register({
@@ -36,15 +36,20 @@ const App = () => {
             age: 22,
             role: 'Frontend Developer',
         },
+        {
+            name: 'Laura',
+            lastName: 'Schunck',
+            age: 20,
+            role: 'Tech Recruiter',
+        },
     ]
     const Pdf = () => (
         <Document>
             <Page size={'A4'}>
                 <PdfTable style={styles.tableStyle} dataSource={source}>
-                    <PdfTable.Column name="Name" dataIndex="name" />
                     <PdfTable.Column name="Last Name" dataIndex="lastName" />
                     <PdfTable.Column name="Age" dataIndex="age" />
-                    <PdfTable.Column name="Role" dataIndex="role" />
+                    <PdfTable.Column flex={3} name="Role" dataIndex="role" />
                 </PdfTable>
             </Page>
         </Document>
