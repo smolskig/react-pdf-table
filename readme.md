@@ -1,5 +1,6 @@
-### This is a Work-in-progress project, feel free to open issues and suggest changes
+This is a Work-in-progress project, feel free to open issues and suggest changes 
 
+It's not intended to be used in production yet, for now its just an study project
 # React-PDF Table
 
 A simple Table to use with React-PDF library
