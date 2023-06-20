@@ -38,7 +38,7 @@ const source = [
 
 ```
 
-The below syntax will result in this PDF:
+The syntax above will result in this PDF:
 ![image](https://github.com/smolskig/react-pdf-table/assets/50807768/5623af6b-beb0-4a67-b62e-c9254e60247b)
 
 
